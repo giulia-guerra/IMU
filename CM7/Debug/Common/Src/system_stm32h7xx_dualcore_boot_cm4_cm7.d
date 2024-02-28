@@ -1,5 +1,5 @@
 Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o: \
- C:/Users/giuby/STM32CubeIDE/workspace_1.13.2/IMU_sensore/Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c \
+ C:/Users/giuby/git/IMU_SENSORE/Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c \
  ../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
  ../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h745xx.h \
  ../../Drivers/CMSIS/Include/core_cm7.h \

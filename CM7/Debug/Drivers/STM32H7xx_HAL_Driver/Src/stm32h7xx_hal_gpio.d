@@ -1,5 +1,5 @@
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.o: \
- C:/Users/giuby/STM32CubeIDE/workspace_1.13.2/IMU_sensore/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c \
+ C:/Users/giuby/git/IMU_SENSORE/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../Core/Inc/stm32h7xx_hal_conf.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \

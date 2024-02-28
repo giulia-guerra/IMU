@@ -61,8 +61,8 @@ all: main-build
 main-build: IMU_sensore_CM7.elf secondary-outputs
 
 # Tool invocations
-IMU_sensore_CM7.elf IMU_sensore_CM7.map: $(OBJS) $(USER_OBJS) C:\Users\giuby\STM32CubeIDE\workspace_1.13.2\IMU_sensore\CM7\STM32H745ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "IMU_sensore_CM7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\giuby\STM32CubeIDE\workspace_1.13.2\IMU_sensore\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_sensore_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+IMU_sensore_CM7.elf IMU_sensore_CM7.map: $(OBJS) $(USER_OBJS) C:\Users\giuby\git\IMU_SENSORE\CM7\STM32H745ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "IMU_sensore_CM7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\giuby\git\IMU_SENSORE\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_sensore_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
