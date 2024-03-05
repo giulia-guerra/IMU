@@ -29,8 +29,8 @@
 
 extern I2C_HandleTypeDef hi2c1;
 typedef struct MPU6050_Data{
-	float Ax_raw, Ay_raw, Az_raw;
-	float Wx_raw, Wy_raw, Wz_raw;
+	int Ax_raw, Ay_raw, Az_raw;
+	int Wx_raw, Wy_raw, Wz_raw;
 }MPU6050_Data;
 
 uint8_t IMU_MPU6050_Init ( void);

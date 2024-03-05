@@ -150,8 +150,8 @@ int main(void)
 	  if(flag_MPU6050_Data_Ready == 1){
 	 	  flag_MPU6050_Data_Ready = 0;
 	 	  IMU_MPU6050_Read_Acc_Gyro(&y);
-	 	  printf("Ax:%f, Ay:%f, Az: %f [m/s^2]\r\n", y.Ax_raw, y.Ay_raw, y.Az_raw);
-	 	  printf("Gx:%f, Gy:%f, Gz: %f [degree/s]\r\n", y.Wx_raw, y.Wy_raw, y.Wz_raw);
+	 	 printf("Ax:%d, Ay:%d, Az: %d [m/s^2]\r\n", y.Ax_raw, y.Ay_raw, y.Az_raw);
+	 	 printf("Gx:%d, Gy:%d, Gz: %d [degree/s]\r\n", y.Wx_raw, y.Wy_raw, y.Wz_raw);
 	 	  printf("\r\n");
 	   }
   }
