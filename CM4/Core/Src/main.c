@@ -152,7 +152,18 @@ int main(void)
 	 	  IMU_MPU6050_Read_Acc_Gyro(&y);
 	 	 printf("Ax:%d, Ay:%d, Az: %d [m/s^2]\r\n", y.Ax_raw, y.Ay_raw, y.Az_raw);
 	 	 printf("Gx:%d, Gy:%d, Gz: %d [degree/s]\r\n", y.Wx_raw, y.Wy_raw, y.Wz_raw);
-	 	  printf("\r\n");
+	 	 printf("\r\n");
+
+	 	 if (y.Az_raw > -1 && y.Az_raw < 1){
+	 		printf("Az: %d [m/s^2]\r\n", y.Az_raw);
+	 		printf("\r\n");
+	 	 }
+	 	 else{
+	 		 printf("ATTENZIONE!! Sensore Bici inclinato");
+	 		 printf("\r\n");
+		     printf("Az: %d [m/s^2]\r\n", y.Az_raw);
+			 printf("\r\n");
+	 	 }
 	   }
   }
   /* USER CODE END 3 */
